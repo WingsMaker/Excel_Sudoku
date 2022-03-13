@@ -6,6 +6,8 @@ Excel macro that solves 154 sudoku puzzles, codes in VBA script.
 
 
 Source of puzzles
+
 https://norvig.com/top95.txt
+
 https://projecteuler.net/project/resources/p096_sudoku.txt
 
