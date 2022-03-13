@@ -11,3 +11,6 @@ https://norvig.com/top95.txt
 
 https://projecteuler.net/project/resources/p096_sudoku.txt
 
+Python codes ? See:
+
+https://norvig.com/sudoku.html
