@@ -3,7 +3,7 @@ Excel macro that solves 154 sudoku puzzles, codes in VBA script.
 Also added the Python3 version.
 
 
-![sudoku_solver](https://user-images.githubusercontent.com/32192638/158045568-bf9e567a-89e2-4d56-a969-c90954f1b6b2.png)
+![sudoku_solver](https://user-images.githubusercontent.com/32192638/160376869-4112ea93-2128-4acb-aba7-8a948c946bce.png)
 
 
 Source of puzzles
