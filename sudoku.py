@@ -1,3 +1,4 @@
+import sys
 
 def cross(A, B):
     "Cross product of elements in A and elements in B."
@@ -100,11 +101,12 @@ def shuffled(seq):
     return seq
 
 def solve_puzzle(puzzle):
-    print("before " + puzzle)
+    #print("before " + puzzle)
     answer = solve(puzzle)
     puzzle_solved = ''.join([ answer[x] for x in answer ])
-    print("after  " + puzzle_solved)
-    display(answer)
+    #print("after  " + puzzle_solved)
+    #display(answer)
+    print(puzzle_solved)
     
 
 digits   = '123456789'
@@ -119,5 +121,6 @@ units = dict((s, [u for u in unitlist if s in u])
 peers = dict((s, set(sum(units[s],[]))-set([s]))
              for s in squares)
 
-puzzle = '3...8.......7....51..............36...2..4....7...........6.13..452...........8..'
+puzzle = '.6.5.1.9.1...9..539....7....4.8...7.......5.8.817.5.3.....5.2............76..8...'
+puzzle = str(sys.argv[1]) if len(sys.argv)>=2 else puzzle
 solve_puzzle(puzzle)   
