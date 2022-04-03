@@ -55,18 +55,6 @@ def eliminate(values, s, d):
                 return False
     return values
 
-################ Display as 2-D grid ################
-
-def display(values):
-    "Display these values as a 2-D grid."
-    width = 1+max(len(values[s]) for s in squares)
-    line = '+'.join(['-'*(width*3)]*3)
-    for r in rows:
-        print(''.join(values[r+c].center(width)+('|' if c in '36' else '')
-                      for c in cols) )
-        if r in 'CF': print(line)
-    print
-
 ################ Search ################
 
 def solve(grid): return search(parse_grid(grid))
@@ -101,11 +89,8 @@ def shuffled(seq):
     return seq
 
 def solve_puzzle(puzzle):
-    #print("before " + puzzle)
     answer = solve(puzzle)
     puzzle_solved = ''.join([ answer[x] for x in answer ])
-    #print("after  " + puzzle_solved)
-    #display(answer)
     print(puzzle_solved)
     
 

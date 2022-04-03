@@ -801,11 +801,10 @@ Sub solve_using_hints()
         If Int("0" & Sheet1.Cells(16, 9).Value) > 0 Then
             Sheet1.Cells(Sheet1.Cells(16, 9).Value, 8).Value = "'" & save_game()
         End If
-            msg = "Sudoku Solver :" + vbCrLf + "Puzzle has been solved !"
+		msg = "Sudoku Solver :" + vbCrLf + "Puzzle has been solved !"
         Sheet1.lblMsg.Caption = msg
         Sheet1.lblMsg.Visible = True
     Else
-        
         If MsgBox("Solve it using advanced Python solution ?", vbQuestion + vbYesNo, "Python Solver") = vbYes Then
             Call solve_using_python
             Sheet1.Cells(Sheet1.Cells(16, 9).Value, 8).Value = "'" & save_game()
