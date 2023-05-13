@@ -16,3 +16,7 @@ https://projecteuler.net/project/resources/p096_sudoku.txt
 More:
 
 https://norvig.com/sudoku.html
+
+online game by me:
+https://wingsmaker.github.io/Sudoku/
+
